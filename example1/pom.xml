@@ -1,0 +1,50 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>net.scruffles</groupId>
+        <artifactId>blog-examples</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <artifactId>example1</artifactId>
+    <packaging>jar</packaging>
+
+    <url>http://blog.scruffles.net</url>
+
+    <!-- JNLP plugin instructions at http://karussell.wordpress.com/2009/05/05/maven-and-webstart-jnlp/ -->
+    <!--mvn install webstart:jnlp-->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>webstart-maven-plugin</artifactId>
+                <version>1.0-alpha-1</version>
+            </plugin>
+        </plugins>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>webstart-maven-plugin</artifactId>
+                    <configuration>
+                        <jnlp>
+                            <mainClass>net.scruffles.App</mainClass>
+                        </jnlp>
+                        <templateDirectory>${project.basedir}/../src/main/jnlp</templateDirectory>
+                        <!--<sign>-->
+                        <!--<keystore>/home/peterk/Dokumente/quell/timefinder/trunk/timefinder-core/timefinder.jks</keystore>-->
+                        <!--<keypass>unsecpwd</keypass>-->
+                        <!--<storepass>unsecpwd</storepass>-->
+                        <!--<storetype>jks</storetype>-->
+                        <!--<alias>timefinder</alias>-->
+                        <!--<verify>true</verify>-->
+                        <!--</sign>-->
+                        <verbose>true</verbose>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+</project>
