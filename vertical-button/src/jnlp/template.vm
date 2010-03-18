@@ -5,11 +5,9 @@
     <title>Example App</title>
     <vendor>Bryan Young</vendor>
     <homepage href="http://blog.scruffles.net/"/>
-    <description kind="one-line">Description</description>
-    <description kind="short">Description</description>
-    <description kind="tooltip">Description</description>
-    <!--<icon href="http://timefinder.sourceforge.net/jnlp/shamrockwhite.jpg" kind="default"/>-->
-    <!--<shortcut online="false"><desktop/><menu submenu="TimeFiner"/></shortcut>-->
+    <description kind="one-line">Demo of Vertical Buttons</description>
+    <description kind="short">Demo of Vertical Buttons</description>
+    <description kind="tooltip">Demo of Vertical Buttons</description>
  </information>
  <security>
      <!--<all-permissions/>-->

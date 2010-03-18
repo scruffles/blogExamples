@@ -8,7 +8,7 @@
         <artifactId>blog-examples</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <artifactId>example1</artifactId>
+    <artifactId>vertical-button</artifactId>
     <packaging>jar</packaging>
 
     <url>http://blog.scruffles.net</url>
@@ -30,7 +30,7 @@
                     <artifactId>webstart-maven-plugin</artifactId>
                     <configuration>
                         <jnlp>
-                            <mainClass>net.scruffles.App</mainClass>
+                            <mainClass>net.scruffles.VerticalButtonDemo</mainClass>
                         </jnlp>
                         <!--<templateDirectory>${project.basedir}/../src/main/jnlp</templateDirectory>-->
                         <!--<sign>-->

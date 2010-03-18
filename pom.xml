@@ -9,6 +9,7 @@
     
     <modules>
         <module>example1</module>
+        <module>vertical-button</module>
     </modules>
 
 
