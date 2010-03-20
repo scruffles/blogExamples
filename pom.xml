@@ -10,6 +10,7 @@
     <modules>
         <module>example1</module>
         <module>vertical-button</module>
+        <module>draggable-toolbar</module>
     </modules>
 
 
